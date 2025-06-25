@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/getcursor/cursorrules/main/schema.json",
+  "name": "RateLimiterPP",
+  "description": "A simple C# console app with xUnit tests and clean structure.",
+  "language": "csharp",
+  "rules": {
+    "projectStructure": {
+      "src": ["MyApp"],
+      "tests": ["MyApp.Tests"],
+      "entryPoints": ["MyApp/Program.cs"],
+      "testFramework": "xunit"
+    },
+    "conventions": {
+      "filenames": {
+        "case": "PascalCase",
+        "disallowSpaces": true
+      },
+      "namespaceMatchFolder": true
+    },
+    "codeQuality": {
+      "maxFunctionLength": 40,
+      "maxFileLength": 300,
+      "maxParameters": 5
+    }
+  },
+  "ignore": [
+    "bin/",
+    "obj/",
+    ".vs/",
+    "*.user",
+    "*.suo"
+  ]
+}
